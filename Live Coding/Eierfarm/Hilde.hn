@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Huhn xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Gewicht>1433</Gewicht>
+  <Name>Hilde</Name>
+  <Id>7e36e99c-4a1c-42b9-93b1-6db1dd7ded4b</Id>
+  <Eier>
+    <Ei id="0d1d847b-4664-40b5-bf41-51edcbc760ad">
+      <Gewicht>75</Gewicht>
+      <Color>Hell</Color>
+    </Ei>
+    <Ei id="fd692679-db4c-468e-8c72-229b7fed5606">
+      <Gewicht>63</Gewicht>
+      <Color>Hell</Color>
+    </Ei>
+    <Ei id="c4ea7d40-2625-4698-98fa-7009c1e52ac1">
+      <Gewicht>80</Gewicht>
+      <Color>Dunkel</Color>
+    </Ei>
+    <Ei id="afb04d2f-25f4-4b53-bbce-04b30148e61a">
+      <Gewicht>77</Gewicht>
+      <Color>Hell</Color>
+    </Ei>
+    <Ei id="b41976f0-9990-4ad0-bf5d-fd0b568ab1b6">
+      <Gewicht>72</Gewicht>
+      <Color>Hell</Color>
+    </Ei>
+  </Eier>
+  <Schluepfdatum>2024-06-25T12:16:22.3277562+02:00</Schluepfdatum>
+</Huhn>

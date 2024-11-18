@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="EierfarmBl.Ei" Collapsed="true">
+    <Position X="9.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAEAAAAAAAAAAgAAAAAgAAAAAAgAAAAEBAAAAAg=</HashCode>
+      <FileName>Ei.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EierfarmBl.Gans" Collapsed="true">
+    <Position X="5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAEAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Gans.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EierfarmBl.Gefluegel" Collapsed="true">
+    <Position X="6.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEACIAEAICAQQAAgEABAAAQAAAAAAABAAAAEAAAAAAA=</HashCode>
+      <FileName>Gefluegel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="EierfarmBl.GefluegelEventArgs" Collapsed="true">
+    <Position X="11.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GefluegelEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EierfarmBl.Huhn" Collapsed="true">
+    <Position X="7.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Huhn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EierfarmBl.Saeugetier" Collapsed="true">
+    <Position X="5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Saeugetier.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EierfarmBl.Schnabeltier" Collapsed="true">
+    <Position X="5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAEAAAAAAAQAAAAAAAAAAAAAAAAABAAAAEAAAAAAA=</HashCode>
+      <FileName>Schnabeltier.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="EierfarmBl.IEiLeger" Collapsed="true">
+    <Position X="9.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAQAAAAAAAAAAAAAAAAABAAAAEAAAAAAA=</HashCode>
+      <FileName>IEiLeger.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="EierfarmBl.EiFarbe" Collapsed="true">
+    <Position X="9.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAACAAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Ei.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
