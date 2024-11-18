@@ -8,4 +8,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="z28m_r51w_210524.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="z28m_r51w_210524.jpg" />
+  </ItemGroup>
+
 </Project>
