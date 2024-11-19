@@ -1,0 +1,83 @@
+﻿<Window
+    x:Class="HistorischeKurseUi.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:hk="clr-namespace:HistorischeKurseDal;assembly=HistorischeKurseDal"
+    xmlns:local="clr-namespace:HistorischeKurseUi"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="400"
+    Height="300"
+    mc:Ignorable="d">
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type hk:Wechselkurs}">
+            <TextBlock>
+                <Run Text="{Binding Symbol}" />
+                <Run Text="{Binding EuroKurs, StringFormat=#\,##0.0000}" />
+
+            </TextBlock>
+        </DataTemplate>
+
+        <local:WechselkursConverter x:Key="cvWechselkursConverter" />
+
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="159*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+
+        <ListBox
+            x:Name="lbxTage"
+            Grid.RowSpan="2"
+            Grid.Column="0"
+            Margin="10,10,10,10"
+            DisplayMemberPath="Datum"
+            ItemsSource="{Binding Handelstage}" />
+
+        <DockPanel
+            Grid.Row="0"
+            Grid.Column="1"
+            LastChildFill="False">
+            <Label
+                Content="Betrag (Fremdwährung):"
+                DockPanel.Dock="Top"
+                FontSize="8" />
+            <TextBox
+                x:Name="txtFremdwaehrung"
+                Width="90"
+                DockPanel.Dock="Left" />
+            <TextBlock Width="90" DockPanel.Dock="Right">
+                <Run>
+                    <Run.Text>
+                        <MultiBinding
+                            Converter="{StaticResource cvWechselkursConverter}"
+                            ConverterCulture="de-DE"
+                            StringFormat="#,##0.00"
+                            UpdateSourceTrigger="PropertyChanged">
+                            <Binding ElementName="txtFremdwaehrung" Path="Text" />
+                            <Binding ElementName="dgWechselkurse" Path="SelectedItem.EuroKurs" />
+                        </MultiBinding>
+                    </Run.Text>
+                </Run>
+            </TextBlock>
+
+        </DockPanel>
+        <!--<ListBox
+            Grid.Column="1"
+            Margin="10,10,10,10"
+            ItemsSource="{Binding ElementName=lbxTage, Path=SelectedItem.Wechselkurse}" Grid.Row="2" />-->
+        <DataGrid
+            x:Name="dgWechselkurse"
+            Grid.Row="2"
+            Grid.Column="1"
+            Margin="10"
+            ItemsSource="{Binding ElementName=lbxTage, Path=SelectedItem.Wechselkurse}" />
+
+    </Grid>
+</Window>

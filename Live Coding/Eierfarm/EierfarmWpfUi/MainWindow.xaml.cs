@@ -26,7 +26,7 @@ namespace EierfarmWpfUi
         {
             Gans gans = new Gans();
 
-            cbxTier.Items.Add(gans);
+            cbxTier.Items.Add(gans as IEiLeger);
             cbxTier.SelectedItem = gans;
         }
 
@@ -42,7 +42,7 @@ namespace EierfarmWpfUi
         {
             Schnabeltier schnabeltier = new Schnabeltier();
 
-            cbxTier.Items.Add(schnabeltier);
+            cbxTier.Items.Add(schnabeltier as IEiLeger);
             cbxTier.SelectedItem = schnabeltier;
 
         }

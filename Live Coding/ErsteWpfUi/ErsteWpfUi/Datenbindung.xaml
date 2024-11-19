@@ -15,13 +15,40 @@
             Canvas.Left="90"
             Canvas.Top="20"
             Width="120"
-            Maximum="100"
-            Minimum="-100" />
+            Maximum="1000"
+            Minimum="0"
+            Value="50" />
         <TextBox
-            Canvas.Left="90"
+            Canvas.Left="{Binding ElementName=slider, Path=Value}"
             Canvas.Top="43"
             Width="120"
             Text="{Binding ElementName=slider, Path=Value}" />
+        <TextBox
+            Canvas.Left="90"
+            Canvas.Top="108"
+            Width="120"
+            Text="{Binding ElementName=slider, Path=Value, Mode=Default}" />
+        <TextBox
+            Canvas.Left="90"
+            Canvas.Top="131"
+            Width="120"
+            Text="{Binding ElementName=slider, Path=Value, Mode=OneTime}" />
+        <TextBox
+            Canvas.Left="90"
+            Canvas.Top="154"
+            Width="120"
+            Text="{Binding ElementName=slider, Path=Value, Mode=OneWay}" />
+        <TextBox
+            Canvas.Left="90"
+            Canvas.Top="177"
+            Width="120"
+            Text="{Binding ElementName=slider, Path=Value, Mode=OneWayToSource}" />
+        <TextBox
+            Canvas.Left="90"
+            Canvas.Top="200"
+            Width="120"
+            Text="{Binding ElementName=slider, Path=Value, Mode=TwoWay}" />
+
 
     </Canvas>
 </Window>

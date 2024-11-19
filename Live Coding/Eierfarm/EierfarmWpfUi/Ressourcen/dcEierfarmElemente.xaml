@@ -1,0 +1,21 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:bl="clr-namespace:EierfarmBl;assembly=EierfarmBl">
+    <DataTemplate x:Key="dtEi" DataType="{x:Type bl:Ei}">
+        <TextBlock>
+            <Run Text="{Binding Gewicht, StringFormat={}{0}g}" /><Run Text="," />
+            <Run Text="{Binding Farbe}" />
+        </TextBlock>
+    </DataTemplate>
+    <!--<DataTemplate DataType="{x:Type bl:IEiLeger}">
+            <TextBlock Text="{Binding Gewicht}" />
+        </DataTemplate>-->
+    <DataTemplate DataType="{x:Type bl:Gefluegel}">
+        <TextBlock>
+            <Run Text="{Binding Name}" />
+            <Run Text="{Binding Gewicht}" />
+        </TextBlock>
+    </DataTemplate>
+
+</ResourceDictionary>
