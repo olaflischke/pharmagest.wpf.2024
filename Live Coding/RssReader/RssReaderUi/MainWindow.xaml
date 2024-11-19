@@ -63,7 +63,7 @@
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <TextBlock>
-                            <Run Text="{Binding PublishDate, StringFormat=HH:mm}" />
+                            <Run Text="{Binding PublishDate}" />
                             <Run Text="{Binding Title.Text, Mode=OneWay}" />
                         </TextBlock>
                     </DataTemplate>
@@ -80,6 +80,7 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="1*" MinHeight="45" />
                     <RowDefinition Height="5*" />
+                    <RowDefinition Height="1*" MinHeight="45" />
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="150" />
@@ -107,6 +108,8 @@
                     Grid.Column="1"
                     Text="{Binding Summary.Text}"
                     TextWrapping="Wrap" />
+
+                <Button Grid.Column="1" Grid.Row="2" Content="de-DE" Click="Button_Click" />
             </Grid>
         </Grid>
     </Grid>

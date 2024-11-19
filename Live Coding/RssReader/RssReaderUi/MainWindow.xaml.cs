@@ -1,5 +1,6 @@
 ﻿using System.ServiceModel.Syndication;
 using System.Windows;
+using System.Windows.Markup;
 using System.Xml;
 
 namespace RssReaderUi;
@@ -13,6 +14,9 @@ public partial class MainWindow : Window
     {
         InitializeComponent();
 
+        // Sprache/Zahlenformate des Fensters an die Sprache/Zahlenformate der Umgebung anpassen
+        //this.Language = XmlLanguage.GetLanguage(Thread.CurrentThread.CurrentCulture.Name);
+
         string url = "https://www.spiegel.de/schlagzeilen/index.rss";
 
         XmlReader xmlReader = XmlReader.Create(url);
@@ -20,5 +24,10 @@ public partial class MainWindow : Window
 
         // Basis aller Binding-Ausdrücke
         this.DataContext = feed;
+    }
+
+    private void Button_Click(object sender, RoutedEventArgs e)
+    {
+        this.Language = XmlLanguage.GetLanguage("de-DE");
     }
 }
