@@ -1,0 +1,45 @@
+﻿<Window
+    x:Class="MvvmMaschineUi.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:MvvmMaschineUi"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:model="clr-namespace:MVVMMaschine;assembly=MvvmMaschineModel"
+    xmlns:viewModel="clr-namespace:MvvmMaschineUi.ViewModel"
+    Title="MainWindow"
+    Width="300"
+    Height="200"
+    d:DataContext="{d:DesignInstance viewModel:MainWindowViewModel}"
+    mc:Ignorable="d">
+    <Canvas>
+        <Button
+            Canvas.Left="231"
+            Canvas.Top="9"
+            Command="{Binding StartCommand}"
+            Content="Start" />
+        <Button
+            Canvas.Left="231"
+            Canvas.Top="34"
+            Command="{Binding StoppCommand}"
+            Content="Stopp" />
+        <TextBlock
+            Canvas.Left="106"
+            Canvas.Top="33"
+            Text="{Binding Maschine.Stueckzahl}" />
+        <TextBox
+            Canvas.Left="106"
+            Canvas.Top="10"
+            Width="120"
+            Text="{Binding Maschine.Geschwindigkeit}" />
+        <Label
+            Canvas.Left="39"
+            Canvas.Top="6"
+            Content="Geschw." />
+        <Label
+            Canvas.Left="39"
+            Canvas.Top="28"
+            Content="Stückzahl" />
+
+    </Canvas>
+</Window>
