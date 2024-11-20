@@ -11,17 +11,17 @@
     Height="315"
     mc:Ignorable="d">
     <Window.Resources>
-        
+
     </Window.Resources>
-    
+
     <Canvas>
         <Button
-            x:Name="btnGans"
+            x:Name="btnNeuesTier"
             Canvas.Left="261"
             Canvas.Top="22"
-            Click="btnGans_Click"
-            Content="Gans" />
-        <Button
+            Click="btnNeuesTier_Click"
+            Content="Neues Tier" />
+        <!--<Button
             x:Name="btnHuhn"
             Canvas.Left="261"
             Canvas.Top="47"
@@ -32,7 +32,7 @@
             Canvas.Left="261"
             Canvas.Top="72"
             Click="btnSchnabeltier_Click"
-            Content="Schnabeltier" />
+            Content="Schnabeltier" />-->
         <ComboBox
             x:Name="cbxTier"
             Canvas.Left="136"
@@ -56,9 +56,10 @@
             Text="{Binding ElementName=cbxTier, Path=SelectedItem.Gewicht}" />
         <ListBox
             Canvas.Left="136"
-            Canvas.Top="97" ItemTemplate="{StaticResource dtEi}"
+            Canvas.Top="97"
             Width="120"
             Height="105"
+            ItemTemplate="{StaticResource dtEi}"
             ItemsSource="{Binding ElementName=cbxTier, Path=SelectedItem.Eier}">
             <!--<ListBox.ItemTemplate>
 

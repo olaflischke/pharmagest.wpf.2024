@@ -1,0 +1,35 @@
+﻿<Window
+    x:Class="EierfarmWpfUi.NeuesTierWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:EierfarmBl="clr-namespace:EierfarmBl;assembly=EierfarmBl"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:EierfarmWpfUi"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="NeuesTierWindow"
+    Width="214"
+    Height="134"
+    mc:Ignorable="d">
+    <Canvas>
+        <TextBox
+            x:Name="txtTiername"
+            Canvas.Left="70"
+            Canvas.Top="10"
+            Width="120"
+            Text="{Binding Tiername}" />
+        <ComboBox
+            x:Name="cbxTiertypen"
+            Canvas.Left="70"
+            Canvas.Top="33"
+            Width="120"
+            ItemsSource="{Binding Tiertypen}"
+            SelectedItem="{Binding Tiertyp}" />
+        <Button
+            Canvas.Left="70"
+            Canvas.Top="72"
+            Width="120"
+            Content="OK" Click="Button_Click" />
+
+
+    </Canvas>
+</Window>

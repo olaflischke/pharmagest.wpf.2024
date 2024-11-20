@@ -22,30 +22,30 @@ namespace EierfarmWpfUi
             InitializeComponent();
         }
 
-        private void btnGans_Click(object sender, RoutedEventArgs e)
-        {
-            Gans gans = new Gans();
+        //private void btnGans_Click(object sender, RoutedEventArgs e)
+        //{
+        //    Gans gans = new Gans();
 
-            cbxTier.Items.Add(gans as IEiLeger);
-            cbxTier.SelectedItem = gans;
-        }
+        //    cbxTier.Items.Add(gans as IEiLeger);
+        //    cbxTier.SelectedItem = gans;
+        //}
 
-        private void btnHuhn_Click(object sender, RoutedEventArgs e)
-        {
-            Huhn huhn = new Huhn();
+        //private void btnHuhn_Click(object sender, RoutedEventArgs e)
+        //{
+        //    Huhn huhn = new Huhn();
 
-            cbxTier.Items.Add(huhn);
-            cbxTier.SelectedItem = huhn;
-        }
+        //    cbxTier.Items.Add(huhn);
+        //    cbxTier.SelectedItem = huhn;
+        //}
 
-        private void btnSchnabeltier_Click(object sender, RoutedEventArgs e)
-        {
-            Schnabeltier schnabeltier = new Schnabeltier();
+        //private void btnSchnabeltier_Click(object sender, RoutedEventArgs e)
+        //{
+        //    Schnabeltier schnabeltier = new Schnabeltier();
 
-            cbxTier.Items.Add(schnabeltier as IEiLeger);
-            cbxTier.SelectedItem = schnabeltier;
+        //    cbxTier.Items.Add(schnabeltier as IEiLeger);
+        //    cbxTier.SelectedItem = schnabeltier;
 
-        }
+        //}
 
         private void btnEiLegen_Click(object sender, RoutedEventArgs e)
         {
@@ -61,6 +61,23 @@ namespace EierfarmWpfUi
             {
                 tier.Fressen();
             }
+        }
+
+        private void btnNeuesTier_Click(object sender, RoutedEventArgs e)
+        {
+            NeuesTierWindow dlgNeuesTier = new NeuesTierWindow() { Tiername = "Neues Tier" };
+            if (dlgNeuesTier.ShowDialog() == true)
+            {
+                var tier = Activator.CreateInstance(dlgNeuesTier.Tiertyp);
+                if (tier is Gefluegel gefluegel)
+                {
+                    gefluegel.Name = dlgNeuesTier.Tiername;
+                }
+
+                cbxTier.Items.Add(tier);
+                cbxTier.SelectedItem = tier;
+            }
+
         }
     }
 }

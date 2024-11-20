@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EierfarmUi", "EierfarmUi\Ei
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EierfarmWpfUi", "EierfarmWpfUi\EierfarmWpfUi.csproj", "{8861E1C9-AC74-4EC6-8C5F-3A0FA562611D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EierfarmMvvmUi", "EierfarmMvvmUi\EierfarmMvvmUi.csproj", "{F1BAC3D9-2424-4155-94FA-5BF121C557FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{8861E1C9-AC74-4EC6-8C5F-3A0FA562611D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8861E1C9-AC74-4EC6-8C5F-3A0FA562611D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8861E1C9-AC74-4EC6-8C5F-3A0FA562611D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1BAC3D9-2424-4155-94FA-5BF121C557FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1BAC3D9-2424-4155-94FA-5BF121C557FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1BAC3D9-2424-4155-94FA-5BF121C557FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1BAC3D9-2424-4155-94FA-5BF121C557FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
