@@ -22,5 +22,6 @@ namespace EierfarmMvvmUi
 
             this.DataContext = new MainWindowViewModel();
         }
+
     }
 }
