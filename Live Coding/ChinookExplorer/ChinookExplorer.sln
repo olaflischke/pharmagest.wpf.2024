@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35506.116 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChinookExplorerUi", "ChinookExplorerUi\ChinookExplorerUi.csproj", "{46F07A0D-2E72-49EA-9B00-F2F175C90C68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChinookDal", "ChinookDal\ChinookDal.csproj", "{CC576FA9-B1C2-4791-B971-353667B06060}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChinookExplorerMvvmCt", "ChinookExplorerMvvmCt\ChinookExplorerMvvmCt.csproj", "{0E79A182-A0E5-481D-A9E4-562ED0DA4550}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46F07A0D-2E72-49EA-9B00-F2F175C90C68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46F07A0D-2E72-49EA-9B00-F2F175C90C68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46F07A0D-2E72-49EA-9B00-F2F175C90C68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46F07A0D-2E72-49EA-9B00-F2F175C90C68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC576FA9-B1C2-4791-B971-353667B06060}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC576FA9-B1C2-4791-B971-353667B06060}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC576FA9-B1C2-4791-B971-353667B06060}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC576FA9-B1C2-4791-B971-353667B06060}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E79A182-A0E5-481D-A9E4-562ED0DA4550}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E79A182-A0E5-481D-A9E4-562ED0DA4550}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E79A182-A0E5-481D-A9E4-562ED0DA4550}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E79A182-A0E5-481D-A9E4-562ED0DA4550}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

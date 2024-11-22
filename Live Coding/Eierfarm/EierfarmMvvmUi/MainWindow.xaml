@@ -6,6 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:EierfarmMvvmUi"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:util="clr-namespace:EierfarmMvvmUi.Util"
     Title="MainWindow"
     Width="370"
     Height="300"
@@ -54,6 +55,17 @@
                 <Run Text="{Binding Farbe}" />
             </TextBlock>
         </DataTemplate>
+        <DataTemplate x:Key="dtDickesEi" DataType="{x:Type bl:Ei}">
+            <TextBlock FontWeight="Bold">
+                <Run Text="{Binding Gewicht, StringFormat={}{0}g}" /><Run Text="," />
+                <Run Text="{Binding Farbe}" />
+            </TextBlock>
+        </DataTemplate>
+
+        <util:EiTemplateSelector
+            x:Key="selEiTemplate"
+            DickesEiTemplate="{StaticResource dtDickesEi}"
+            EiTemplate="{StaticResource dtEi}" />
     </Window.Resources>
 
     <Canvas>
@@ -102,7 +114,7 @@
             Canvas.Top="97"
             Width="120"
             Height="105"
-            ItemTemplate="{StaticResource dtEi}"
+            ItemTemplateSelector="{StaticResource selEiTemplate}"
             ItemsSource="{Binding ElementName=cbxTier, Path=SelectedItem.Eier}" />
 
         <Button

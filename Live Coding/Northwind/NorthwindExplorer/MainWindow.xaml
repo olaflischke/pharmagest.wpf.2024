@@ -52,6 +52,7 @@
             AutoGenerateColumns="False"
             ItemsSource="{Binding ElementName=cbxOrders, Path=SelectedItem.OrderDetails}">
             <DataGrid.Columns>
+                
                 <DataGridTemplateColumn>
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
